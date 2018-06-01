@@ -1,14 +1,8 @@
 #coding=utf-8
-import web
-from Tools import SQLTools
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
-from User.UserInfo import *
-from User.UserHistory import *
-from Tools.Image import *
-from Publish.Publish import *
-from MainPage.MainActivity import *
 
+from MainPage.MainActivity import *
 
 urls = (
     #登录注册

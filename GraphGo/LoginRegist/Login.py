@@ -1,5 +1,7 @@
 import web
-from GraphGo.Tools import SQLTools,LittleTools
+from sys import path
+path.append(r'Tools')
+import SQLTools,LittleTools
 import GraphGo.Config
 
 render = web.template.render("Html")

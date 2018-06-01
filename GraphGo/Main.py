@@ -1,7 +1,7 @@
 #coding=utf-8
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
-
+from Tools.Image import *
 from MainPage.MainActivity import *
 
 urls = (

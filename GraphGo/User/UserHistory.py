@@ -1,6 +1,7 @@
 import web
-from GraphGo.Tools import SQLTools,LittleTools
-import GraphGo.Config
+
+from GraphGo.Tools import SQLTools, LittleTools
+
 
 class UserActivity:
     def POST(self):

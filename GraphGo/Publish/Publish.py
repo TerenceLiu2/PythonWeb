@@ -1,5 +1,8 @@
 import web
-from GraphGo.Tools import SQLTools,LittleTools
+from sys import path
+path.append(r'Tools')
+path.append(r'Config')
+import SQLTools,LittleTools
 
 class Publish:
     def POST(self):

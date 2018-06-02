@@ -18,6 +18,7 @@ class MainWait:
             for item in item_list:
                 info_dict['item_list'].append({'user_id':item[0],'username':item[2],'content':item[1],'img_url':"http://%s/Img/%d/profile" % (
                 GraphGo.Config.Config.ip, item[0])})
+            print info_dict
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e

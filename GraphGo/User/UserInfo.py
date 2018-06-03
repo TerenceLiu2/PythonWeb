@@ -1,7 +1,9 @@
 import web
-
-import GraphGo.Config
-from GraphGo.Tools import SQLTools, LittleTools
+from sys import path
+path.append(r'Tools')
+path.append(r'Config')
+import Config
+import SQLTools, LittleTools
 
 
 class UserInfoUpload:
@@ -41,7 +43,7 @@ class UserBasicInfo:
         except Exception,e:
             pass
         if token!=None:
-            return LittleTools.MakeJson(200, {"img_url":"http://%s/Img/%d/profile"%(GraphGo.Config.ip, user_id)})
+            return LittleTools.MakeJson(200, {"img_url":"http://%s/Img/%d/profile"%(Config.Config.ip, user_id)})
         else:
             return LittleTools.MakeJson(401, "")
 

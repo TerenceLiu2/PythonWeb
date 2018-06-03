@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea28cc18-63e8-4f81-8642-dc3b2d5ccfe2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Main.py" afterPath="$PROJECT_DIR$/GraphGo/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/User/UserInfo.py" afterPath="$PROJECT_DIR$/GraphGo/User/UserInfo.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +76,8 @@
       <file leaf-file-name="UserInfo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/User/UserInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+            <state relative-caret-position="270">
+              <caret line="37" column="66" lean-forward="false" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -738,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528013179142</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="all Project">
+      <created>1528028771545</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1528028771545</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1121,8 +1127,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/User/UserInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+        <state relative-caret-position="270">
+          <caret line="37" column="66" lean-forward="false" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

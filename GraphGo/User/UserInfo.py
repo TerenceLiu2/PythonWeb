@@ -35,7 +35,8 @@ class UserInfoUpload:
 class UserBasicInfo:
     def POST(self):
         token=web.input()
-        user_id = LittleTools.certify_token(token.encode("utf-8"))
+        print token
+        user_id = LittleTools.certify_token(token)
         if user_id==False:
             return LittleTools.MakeJson(400,"")
         try:

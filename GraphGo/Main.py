@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #coding=utf-8
-import Config.Config
+# import Config.Config
 from sys import path
 path.append(r'Tools')
 import SQLTools, LittleTools

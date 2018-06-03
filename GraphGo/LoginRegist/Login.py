@@ -1,8 +1,7 @@
 import web
-# from sys import path
-# path.append(r'Tools')
-
-# import SQLTools,LittleTools
+from sys import path
+path.append(r'Tools')
+import SQLTools,LittleTools
 
 render = web.template.render("Html")
 renderImg = web.template.render("Img")

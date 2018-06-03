@@ -40,7 +40,7 @@ class UserBasicInfo:
         if user_id==False:
             return LittleTools.MakeJson(400,"")
         try:
-            user_name=SQLTools.GetOneFromSql("select username from user where user_id=%d"%user_id)
+            user_name=SQLTools.GetOneFromSql("select username from user where user_id=%s"%user_id)
         except Exception,e:
             print e
             return LittleTools.MakeJson(500,"")

@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #coding=utf-8
+import Config.Config
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
 from Tools.Image import *

@@ -1,8 +1,8 @@
 import web
 from sys import path
 path.append(r'Tools')
-path.append(r'Config')
-import Config
+# path.append(r'Config')
+# import Config
 import SQLTools, LittleTools
 
 

@@ -43,7 +43,7 @@ class UserBasicInfo:
         except Exception,e:
             pass
         if token!=None:
-            return LittleTools.MakeJson(200, {"img_url":"http://%s/Img/%d/profile"%(Config.Config.ip, user_id)})
+            return LittleTools.MakeJson(200, {"user_name":user_name,"profile":"http://%s/Img/%d/profile"%(Config.Config.ip, user_id)})
         else:
             return LittleTools.MakeJson(401, "")
 

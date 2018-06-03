@@ -1,5 +1,8 @@
 #coding=utf-8
 import Config.Config
+from sys import path
+path.append(r'Tools')
+import SQLTools, LittleTools
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
 from Tools.Image import *

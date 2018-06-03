@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #coding=utf-8
 from LoginRegist.Login import *
 from LoginRegist.Regist import *

@@ -3,6 +3,7 @@ import Config.Config
 import Tools.SQLTools, Tools.LittleTools
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
+from MainPage.TakeActivity import *
 from Tools.Image import *
 from User.UserInfo import *
 from MainPage.MainActivity import *
@@ -22,6 +23,7 @@ urls = (
     #主页
     '/MainWait','MainWait',
     '/MainFinish','MainFinish',
+    '/TakeActivity','TakeActivity',
     #测试
     '/(.*?)', 'RegistInput'
 

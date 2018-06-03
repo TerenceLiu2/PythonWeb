@@ -4,6 +4,7 @@ import Tools.SQLTools, Tools.LittleTools
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
 from Tools.Image import *
+from User.UserInfo import *
 from MainPage.MainActivity import *
 
 urls = (

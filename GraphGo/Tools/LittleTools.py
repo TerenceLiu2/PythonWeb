@@ -27,7 +27,7 @@ def certify_token(token):
         @Returns:
             key
     '''
-    token_str = base64.urlsafe_b64decode(token).decode('utf-8')
+    token_str = base64.urlsafe_b64decode(str(token)).decode('utf-8')
     print token_str
     token_list = token_str.split('%')
     if len(token_list) != 2:

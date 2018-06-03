@@ -1,9 +1,7 @@
 #!/usr/bin/python
 #coding=utf-8
-# import Config.Config
-from sys import path
-path.append(r'Tools')
-import SQLTools, LittleTools
+import Config.Config
+import Tools.SQLTools, Tools.LittleTools
 from LoginRegist.Login import *
 from LoginRegist.Regist import *
 from Tools.Image import *

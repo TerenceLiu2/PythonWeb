@@ -42,6 +42,8 @@ class UserBasicInfo:
         try:
             user_name=SQLTools.GetOneFromSql("select username from user where user_id=%d"%user_id)
         except Exception,e:
+            print e
+            return LittleTools.MakeJson(500,"")
             pass
         if token!=None:
             return LittleTools.MakeJson(200, {"user_name":user_name,"profile":"http://%s/Img/%d/profile"%(Config.Config.ip, user_id)})

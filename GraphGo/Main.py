@@ -5,6 +5,7 @@ from LoginRegist.Login import *
 from LoginRegist.Regist import *
 from MainPage.TakeActivity import *
 from Tools.Image import *
+from Publish.Publish import *
 from User.UserInfo import *
 from MainPage.MainActivity import *
 

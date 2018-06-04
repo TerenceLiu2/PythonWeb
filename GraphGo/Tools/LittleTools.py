@@ -51,7 +51,7 @@ def Mkdir(dir_name):
 
 def GenerateActivityId(user_id):
     # SQLTools.InitSql('localhost','root','123','GraphGo')
-    count=SQLTools.GetOneFromSql("select count(*) from activity where user_id=%s"%user_id)
-    activity_id=str(user_id)+"_"+str(count+1)
+    count=SQLTools.GetOneFromSql("select count(*) from activity;")
+    activity_id=str(count+1)
     print activity_id
     return activity_id

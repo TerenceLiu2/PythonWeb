@@ -15,7 +15,7 @@ class Publish:
             return LittleTools.MakeJson(401,"")
         try:
             activity_id=LittleTools.GenerateActivityId(user_id)
-            SQLTools.InsertSql("insert into activity values ('%s',%s,'%s',%s);"%(activity_id,user_id,content,type))
+            SQLTools.InsertSql("insert into activity values (%s,%s,'%s',%s,0,null);"%(activity_id,user_id,content,type))
             return LittleTools.MakeJson(200,"")
         except Exception,e:
             print e

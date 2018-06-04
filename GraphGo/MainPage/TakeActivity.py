@@ -7,7 +7,7 @@ import SQLTools,LittleTools
 class TakeActivity:
     def POST(self):
         info=web.input(d={})
-        token=info['token']
+        token=info['token'].encode("utf-8")
         activity_id=info['activity_id']
         user_id=LittleTools.certify_token(token)
         if user_id==False:

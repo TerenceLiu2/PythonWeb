@@ -7,7 +7,7 @@ import SQLTools,LittleTools
 class Publish:
     def POST(self):
         pub_info=web.input(d={})
-        token=pub_info['token']
+        token=pub_info['token'].encode("utf-8")
         type=pub_info['type']
         content=pub_info['content']
         user_id=LittleTools.certify_token(token)

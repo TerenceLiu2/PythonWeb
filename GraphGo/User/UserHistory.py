@@ -14,6 +14,8 @@ class UserActivity:
             page_num=info_dict['page_num']
             item_num=info_dict['item_num']
             user_id=LittleTools.certify_token(token)
+            if user_id==False:
+                return LittleTools.MakeJson(400,"")
             wait_list = SQLTools.GetHistoryFromSql(0, page_num, item_num)
             finish_list = SQLTools.GetHistoryFromSql(1, page_num, item_num)
             info_dict = {}
@@ -40,4 +42,13 @@ class UserPhoto:
         page_num = info_dict['page_num']
         item_num = info_dict['item_num']
         user_id = LittleTools.certify_token(token)
-        photo=SQLTools.GetListFromSql("select photo_id,img_dir from photo where user_id=%s limit %s,%s;"%(user_id,(page_num-1)*item_num,item_num))
+        if user_id == False:
+            return LittleTools.MakeJson(400, "")
+        try:
+            photo_list=SQLTools.GetHistoryFromSql(3,page_num,item_num)
+            info_dict = {}
+            info_dict['photo_list'] = photo_list
+            return LittleTools.MakeJson(200,info_dict)
+        except Exception,e:
+            print e
+            return LittleTools.MakeJson(500,"")

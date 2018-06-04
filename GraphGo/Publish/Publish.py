@@ -10,6 +10,7 @@ class Publish:
         token=pub_info['token'].encode("utf-8")
         type=pub_info['type']
         content=pub_info['content']
+        print content,type
         user_id=LittleTools.certify_token(token)
         if user_id==False:
             return LittleTools.MakeJson(401,"")

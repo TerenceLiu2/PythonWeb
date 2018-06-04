@@ -16,7 +16,7 @@ class TakeActivity:
             print "update activity set status=1 where activity_id=%s"%activity_id
             print "update activity set attender_id=%d where activity_id=%s" % (user_id,activity_id)
             SQLTools.UpdateSql("update activity set status=1 where activity_id=%s"%activity_id)
-            SQLTools.UpdateSql("update activity set attender_id=%d where activity_id=%s" % (user_id,activity_id))
+            SQLTools.UpdateSql("update activity set attender_id=%s where activity_id=%s" % (user_id,activity_id))
             return LittleTools.MakeJson(200,"")
         except Exception,e:
             print e

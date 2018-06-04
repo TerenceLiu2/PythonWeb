@@ -5,7 +5,7 @@ import time
 import base64
 import SQLTools
 
-def generate_token(key, expire=3600):
+def generate_token(key, expire=36000):
     r'''
         @Args:
             key: str (用户给定的key，需要用户保存以便之后验证token,每次产生token时的key 都可以是同一个key)

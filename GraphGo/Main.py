@@ -12,7 +12,6 @@ urls = (
     #登录注册
     '/Login','Login',
     '/Regist','Regist',
-    '/LoginProfile','LoginProfile',
     #用户
     '/UserInfoUpload','UserInfoUpload',
     '/Img/(.*?)','SingleImg',

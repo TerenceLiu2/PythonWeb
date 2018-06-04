@@ -6,16 +6,6 @@ import SQLTools,LittleTools
 render = web.template.render("Html")
 renderImg = web.template.render("Img")
 
-class LoginProfile:
-    def POST(self):
-        username = web.input()
-        user_id = SQLTools.GetOneFromSql("select user_id from user where username='%s'" % username)
-        if user_id != None:
-            return LittleTools.MakeJson(200, {"img_url": "http://%s/Img/%d/profile" % (GraphGo.Config.ip, user_id)})
-        else:
-            return LittleTools.MakeJson(400, {"img_url": "http://%s/Img/default/profile" % GraphGo.Config.ip})
-
-
 
 class Login:
     def POST(self):

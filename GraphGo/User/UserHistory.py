@@ -1,5 +1,5 @@
 import web
-from os import path
+from sys import path
 path.append(r'Tools')
 path.append(r'Config')
 import Config

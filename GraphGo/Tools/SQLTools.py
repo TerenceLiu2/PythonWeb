@@ -52,6 +52,7 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
     elif type==2:
+        print "select img_id,img_dir from photo where user_id=%s"%user_id
         cur.execute("select img_id,img_dir from photo where user_id=%s"%user_id)
     return cur.fetchall()
 

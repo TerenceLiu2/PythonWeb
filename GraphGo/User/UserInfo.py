@@ -19,7 +19,7 @@ class UserInfoUpload:
             email=info_dict['email']
             birthday=info_dict['birthday']
             introduction=info_dict['introduction']
-            print phone_number,email,birthday,introduction
+            print phone_number,email,birthday,introduction,profile
             SQLTools.UpdateUserInfo(user_id, phone_number, email, birthday, introduction)
             LittleTools.Mkdir("Img/"+str(user_id))
             fwrite=open("Img/"+str(user_id)+"/profile",'w')

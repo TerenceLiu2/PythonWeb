@@ -16,6 +16,7 @@ class FinishActivity:
             return LittleTools.MakeJson(400,"")
         try:
             SQLTools.UpdateSql("update activity set status=2 where activity_id=%s"%activity_id)
+            SQLTools.UpdateSql("update activity set content='%s' where activity_id=%s"%(content,activity_id))
             for i in range(len(img_list)):
                 LittleTools.Mkdir("Img/%s/%s/"%(user_id,activity_id))
                 img_dir="Img/%s/%s/%d"%(user_id,activity_id,i)

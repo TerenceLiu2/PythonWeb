@@ -12,8 +12,8 @@ class UserActivity:
         try:
             info_dict=web.input(d={})
             token=info_dict['token'].encode("utf-8")
-            page_num=info_dict['page_num']
-            item_num=info_dict['item_num']
+            page_num=int(info_dict['page_num'])
+            item_num=int(info_dict['item_num'])
             user_id=LittleTools.certify_token(token)
             if user_id==False:
                 return LittleTools.MakeJson(400,"")

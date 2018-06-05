@@ -9,6 +9,7 @@ from MainPage.MainActivity import *
 from Publish.Publish import *
 from User.UserHistory import *
 from User.UserInfo import *
+from Tools.Image import *
 from MainPage.MainActivity import *
 
 urls = (

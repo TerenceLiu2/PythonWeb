@@ -17,8 +17,8 @@ class UserActivity:
             user_id=LittleTools.certify_token(token)
             if user_id==False:
                 return LittleTools.MakeJson(400,"")
-            wait_list = SQLTools.GetHistoryFromSql(0, page_num, item_num)
-            finish_list = SQLTools.GetHistoryFromSql(1, page_num, item_num)
+            wait_list = SQLTools.GetHistoryFromSql(0, page_num, item_num,user_id)
+            finish_list = SQLTools.GetHistoryFromSql(1, page_num, item_num,user_id)
             info_dict = {}
             info_dict['wait_list'] = []
             for item in wait_list:

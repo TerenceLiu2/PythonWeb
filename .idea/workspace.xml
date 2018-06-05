@@ -40,9 +40,11 @@
       <file leaf-file-name="UserHistory.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="20" column="82" lean-forward="false" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,7 +52,7 @@
       <file leaf-file-name="SQLTools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="81">
               <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
               <folding />
             </state>
@@ -532,13 +534,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00022" summary="all Project">
-      <created>1528012046635</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1528012046635</updated>
-    </task>
     <task id="LOCAL-00023" summary="all Project">
       <created>1528012093361</created>
       <option name="number" value="00023" />
@@ -875,7 +870,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528160468414</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="all Project">
+      <created>1528160506717</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1528160506717</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView">
@@ -889,12 +891,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="97" y="1" width="1824" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33371428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.49771428" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992035" sideWeight="0.5228571" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13765642" sideWeight="0.72914284" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992035" sideWeight="0.47714287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992035" sideWeight="0.47714287" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1217,14 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/Tools/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1251,11 +1246,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="20" column="82" lean-forward="false" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

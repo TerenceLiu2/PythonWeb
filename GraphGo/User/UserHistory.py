@@ -40,15 +40,17 @@ class UserPhoto:
     def POST(self):
         info_dict = web.input(d={})
         token = info_dict['token'].encode("utf-8")
-        page_num = info_dict['page_num']
-        item_num = info_dict['item_num']
+        page_num = int(info_dict['page_num'])
+        item_num = int(info_dict['item_num'])
         user_id = LittleTools.certify_token(token)
         if user_id == False:
             return LittleTools.MakeJson(400, "")
         try:
-            photo_list=SQLTools.GetHistoryFromSql(3,page_num,item_num)
+            photo_list=SQLTools.GetHistoryFromSql(3,page_num,item_num,user_id)
             info_dict = {}
-            info_dict['photo_list'] = photo_list
+            info_dict['img_list']=[]
+            for item in photo_list:
+                info_dict['img_list'].append({"img_id":item[0],"img_url":Config.ip+"/"+item[1]})
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e

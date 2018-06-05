@@ -1,0 +1,499 @@
+157.122.68.236:53520 - - [03/Jun/2018 20:48:11] "HTTP/1.1 POST /MainFinish" - 200 OK
+157.122.68.236:43841 - - [03/Jun/2018 20:48:12] "HTTP/1.1 POST /MainWait" - 200 OK
+189.130.204.251:38982 - - [03/Jun/2018 20:56:15] "HTTP/1.1 GET /" - 200 OK
+119.207.33.4:41549 - - [03/Jun/2018 21:19:50] "HTTP/1.1 GET /" - 200 OK
+101.226.64.174:35518 - - [03/Jun/2018 21:37:16] "HTTP/1.1 GET /Img/2/2/0" - 200 OK
+180.253.4.205:57547 - - [03/Jun/2018 21:56:25] "HTTP/1.1 GET /" - 200 OK
+2.179.210.127:36876 - - [03/Jun/2018 22:39:28] "HTTP/1.1 GET /" - 200 OK
+138.118.225.4:42795 - - [03/Jun/2018 23:14:45] "HTTP/1.1 GET /" - 200 OK
+138.75.99.19:7171 - - [03/Jun/2018 23:39:56] "HTTP/1.1 GET /" - 200 OK
+139.162.111.98:45584 - - [03/Jun/2018 23:54:36] "HTTP/1.1 GET /" - 200 OK
+104.152.52.23:47797 - - [04/Jun/2018 01:44:40] "HTTP/1.1 GET /" - 200 OK
+104.152.52.21:47782 - - [04/Jun/2018 01:46:59] "HTTP/1.1 GET /" - 200 OK
+101.226.68.215:28157 - - [04/Jun/2018 02:09:50] "HTTP/1.1 GET /" - 200 OK
+114.215.45.79:39062 - - [04/Jun/2018 02:31:50] "HTTP/1.1 GET /" - 200 OK
+165.16.42.28:54514 - - [04/Jun/2018 02:43:06] "HTTP/1.1 GET /" - 200 OK
+89.143.30.53:6387 - - [04/Jun/2018 04:08:32] "HTTP/1.1 GET /" - 200 OK
+189.189.10.248:60281 - - [04/Jun/2018 04:16:22] "HTTP/1.1 GET /" - 200 OK
+201.150.149.122:50516 - - [04/Jun/2018 04:20:44] "HTTP/1.1 GET /" - 200 OK
+189.46.85.60:58718 - - [04/Jun/2018 04:31:10] "HTTP/1.1 GET /" - 200 OK
+179.56.201.120:47993 - - [04/Jun/2018 04:43:43] "HTTP/1.1 GET /" - 200 OK
+186.248.106.2:46052 - - [04/Jun/2018 05:29:46] "HTTP/1.1 GET /" - 200 OK
+187.33.81.126:58074 - - [04/Jun/2018 06:09:58] "HTTP/1.1 GET /" - 200 OK
+125.212.217.215:37953 - - [04/Jun/2018 06:19:22] "HTTP/1.1 GET /" - 200 OK
+125.212.217.215:42015 - - [04/Jun/2018 06:19:23] "HTTP/1.1 GET /favicon.ico" - 200 OK
+203.77.242.26:42001 - - [04/Jun/2018 07:27:55] "HTTP/1.1 GET /" - 200 OK
+101.226.64.174:49446 - - [04/Jun/2018 07:30:28] "HTTP/1.1 GET /Login" - 405 Method Not Allowed
+187.207.15.159:41973 - - [04/Jun/2018 07:44:46] "HTTP/1.1 GET /" - 200 OK
+216.218.206.67:24454 - - [04/Jun/2018 08:11:42] "HTTP/1.1 GET /" - 200 OK
+123.161.84.94:53066 - - [04/Jun/2018 08:49:55] "HTTP/1.1 GET /" - 200 OK
+189.226.44.187:49069 - - [04/Jun/2018 09:40:25] "HTTP/1.1 POST /GponForm/diag_Form" - 405 Method Not Allowed
+114.215.45.79:3222 - - [04/Jun/2018 10:30:01] "HTTP/1.1 GET /" - 200 OK
+112.96.109.136:25875 - - [04/Jun/2018 10:39:13] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.109.136:25876 - - [04/Jun/2018 10:39:16] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.109.136:25877 - - [04/Jun/2018 10:39:18] "HTTP/1.1 POST /MainWait" - 200 OK
+112.96.109.136:25878 - - [04/Jun/2018 10:47:37] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.109.136:25879 - - [04/Jun/2018 10:47:40] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.109.136:25880 - - [04/Jun/2018 10:47:43] "HTTP/1.1 POST /MainWait" - 200 OK
+112.96.109.136:25881 - - [04/Jun/2018 10:47:45] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25882 - - [04/Jun/2018 10:47:59] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25883 - - [04/Jun/2018 10:48:00] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25884 - - [04/Jun/2018 10:48:01] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25885 - - [04/Jun/2018 10:48:01] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25886 - - [04/Jun/2018 10:48:01] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25887 - - [04/Jun/2018 10:48:01] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25888 - - [04/Jun/2018 10:48:01] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/LoginRegist/Login.py", line 26, in POST
+    sql_list= SQLTools.GetListFromSql(sql)
+  File "Tools/SQLTools.py", line 29, in GetListFromSql
+    cur.execute(sql)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+112.96.109.136:25889 - - [04/Jun/2018 10:48:02] "HTTP/1.1 POST /Login" - 500 Internal Server Error
+189.132.58.254:35823 - - [04/Jun/2018 10:58:42] "HTTP/1.1 GET /" - 200 OK
+95.245.248.168:43278 - - [04/Jun/2018 11:17:33] "HTTP/1.1 GET /" - 200 OK
+5.160.213.125:49670 - - [04/Jun/2018 12:05:45] "HTTP/1.1 GET /" - 200 OK
+112.96.109.136:27841 - - [04/Jun/2018 12:06:27] "HTTP/1.1 POST /MainFinish" - 200 OK
+201.170.28.233:39850 - - [04/Jun/2018 12:09:50] "HTTP/1.1 GET /" - 200 OK
+112.96.115.233:49691 - - [04/Jun/2018 17:02:30] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.115.233:49692 - - [04/Jun/2018 17:02:32] "HTTP/1.1 POST /MainWait" - 200 OK
+112.96.115.233:49693 - - [04/Jun/2018 17:02:34] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.115.233:49694 - - [04/Jun/2018 17:02:37] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+112.96.115.233:49695 - - [04/Jun/2018 17:02:53] "HTTP/1.1 POST /MainWait" - 200 OK
+112.96.115.233:49696 - - [04/Jun/2018 17:02:53] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.115.233:49697 - - [04/Jun/2018 17:02:54] "HTTP/1.1 POST /MainWait" - 200 OK
+112.96.115.233:49699 - - [04/Jun/2018 17:02:56] "HTTP/1.1 POST /MainFinish" - 200 OK
+112.96.115.233:49700 - - [04/Jun/2018 17:02:59] "HTTP/1.1 POST /MainWait" - 200 OK
+112.96.115.233:49701 - - [04/Jun/2018 17:03:01] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:18390 - - [04/Jun/2018 17:03:20] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:55276 - - [04/Jun/2018 17:03:21] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+157.122.68.233:55283 - - [04/Jun/2018 17:03:21] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:56481 - - [04/Jun/2018 17:03:24] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:56479 - - [04/Jun/2018 17:03:24] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:41768 - - [04/Jun/2018 17:03:42] "HTTP/1.1 POST /Login" - 200 OK
+157.122.68.233:41776 - - [04/Jun/2018 17:03:42] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:55276 - - [04/Jun/2018 17:03:42] "HTTP/1.1 GET /Img/2/profile" - 200 OK
+157.122.68.233:45738 - - [04/Jun/2018 17:03:52] "HTTP/1.1 POST /MainWait" - 200 OK
+157.122.68.233:12175 - - [04/Jun/2018 17:03:57] "HTTP/1.1 POST /TakeActivity" - 200 OK
+157.122.68.233:12188 - - [04/Jun/2018 17:03:57] "HTTP/1.1 POST /MainWait" - 200 OK
+157.122.68.233:22743 - - [04/Jun/2018 17:04:28] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+157.122.68.233:30062 - - [04/Jun/2018 17:04:28] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:22763 - - [04/Jun/2018 17:04:28] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:45924 - - [04/Jun/2018 17:04:31] "HTTP/1.1 POST /MainWait" - 200 OK
+157.122.68.233:42957 - - [04/Jun/2018 17:08:58] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+157.122.68.233:35402 - - [04/Jun/2018 17:08:59] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:35451 - - [04/Jun/2018 17:08:59] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:2499 - - [04/Jun/2018 17:09:13] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:42866 - - [04/Jun/2018 17:09:13] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:37811 - - [04/Jun/2018 17:09:23] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:16060 - - [04/Jun/2018 17:09:58] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:57162 - - [04/Jun/2018 17:10:56] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+157.122.68.233:4213 - - [04/Jun/2018 17:10:57] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:58871 - - [04/Jun/2018 17:10:57] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:51028 - - [04/Jun/2018 17:10:59] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:14475 - - [04/Jun/2018 17:10:59] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:51015 - - [04/Jun/2018 17:11:32] "HTTP/1.1 POST /Login" - 200 OK
+157.122.68.233:51058 - - [04/Jun/2018 17:11:32] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+http://0.0.0.0:8080/
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+MiUxNTI4MDkwMDc0Ljg4
+2%1528090074.88
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+MiUxNTI4MDkwMDc0Ljg4
+2%1528090074.88
+MyUxNTI4MTA2MjcyLjE2
+3%1528106272.16
+{'username': u'carson', 'profile': u'http://193.112.7.114:8080/Img/3/profile'}
+MyUxNTI4MTA2MjcyLjE2
+3%1528106272.16
+{'username': u'carson', 'profile': u'http://193.112.7.114:8080/Img/3/profile'}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'5', 'user_id': 3L, 'content': u'test', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+2%1528106622.15
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}, {'username': u'carson', 'status': 1L, 'activity_id': u'5', 'user_id': 3L, 'content': u'test', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}, {'username': u'carson', 'status': 1L, 'activity_id': u'5', 'user_id': 3L, 'content': u'test', 'img_url': 'http://193.112.7.114:8080/Img/3/profile'}]}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+MiUxNTI4MTA2NjIyLjE1
+2%1528106622.15
+{'username': u'g', 'profile': u'http://193.112.7.114:8080/Img/2/profile'}
+MyUxNTI4MTA3MDkyLjU5
+3%1528107092.59
+{'username': u'carson', 'profile': u'http://193.112.7.114:8080/Img/3/profile'}
+{'item_list': [{'username': u'DaShaBi', 'status': 1L, 'activity_id': u'1', 'user_id': 1L, 'content': u'hh', 'img_url': 'http://193.112.7.114:8080/Img/1/profile'}, {'username': u'carson', 'status': 0L, 'activity_id': u'4', 'user_id': 3L, 'content': u'157.122.68.233:60675 - - [04/Jun/2018 17:12:12] "HTTP/1.1 POST /MainWait" - 200 OK
+177.103.160.139:39467 - - [04/Jun/2018 17:14:16] "HTTP/1.1 GET /" - 200 OK
+157.122.68.233:6886 - - [04/Jun/2018 17:18:55] "HTTP/1.1 POST /Login" - 200 OK
+157.122.68.233:57134 - - [04/Jun/2018 17:18:55] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:3627 - - [04/Jun/2018 17:19:08] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:49820 - - [04/Jun/2018 17:19:08] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:49799 - - [04/Jun/2018 17:19:08] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+157.122.68.233:40870 - - [04/Jun/2018 17:19:09] "HTTP/1.1 POST /MainWait" - 200 OK
+157.122.68.233:57761 - - [04/Jun/2018 17:31:24] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+157.122.68.233:37942 - - [04/Jun/2018 17:31:24] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:16047 - - [04/Jun/2018 17:31:24] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:12174 - - [04/Jun/2018 17:31:26] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:62454 - - [04/Jun/2018 17:31:26] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:14731 - - [04/Jun/2018 17:35:06] "HTTP/1.1 POST /MainFinish" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/3/4/0'
+
+157.122.68.233:27265 - - [04/Jun/2018 17:35:07] "HTTP/1.1 GET /Img/3/4/0" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/ubuntu/PythonWeb/GraphGo/Tools/Image.py", line 4, in GET
+    img = open('Img/' + name)
+IOError: [Errno 2] No such file or directory: u'Img/1/1/0'
+
+157.122.68.233:30039 - - [04/Jun/2018 17:35:07] "HTTP/1.1 GET /Img/1/1/0" - 500 Internal Server Error
+157.122.68.233:27355 - - [04/Jun/2018 17:35:09] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:60352 - - [04/Jun/2018 17:36:42] "HTTP/1.1 POST /MainFinish" - 200 OK
+157.122.68.233:51493 - - [04/Jun/2018 17:36:42] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:39709 - - [04/Jun/2018 17:36:45] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:50552 - - [04/Jun/2018 17:36:45] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:16009 - - [04/Jun/2018 17:41:42] "HTTP/1.1 POST /MainFinish" - 200 OK
+157.122.68.233:61369 - - [04/Jun/2018 17:41:44] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:8201 - - [04/Jun/2018 17:41:44] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:33200 - - [04/Jun/2018 17:42:18] "HTTP/1.1 POST /MainFinish" - 200 OK
+157.122.68.233:52032 - - [04/Jun/2018 17:42:21] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:8921 - - [04/Jun/2018 17:42:21] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:49725 - - [04/Jun/2018 17:42:31] "HTTP/1.1 POST /MainFinish" - 200 OK
+157.122.68.233:55363 - - [04/Jun/2018 17:42:42] "HTTP/1.1 POST /MainWait" - 200 OK
+157.122.68.233:42989 - - [04/Jun/2018 17:42:45] "HTTP/1.1 POST /MainFinish" - 200 OK
+157.122.68.233:53854 - - [04/Jun/2018 17:42:53] "HTTP/1.1 POST /UserBasicInfo" - 200 OK
+157.122.68.233:46191 - - [04/Jun/2018 17:44:01] "HTTP/1.1 POST /MainFinish" - 200 OK

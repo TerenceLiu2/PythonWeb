@@ -50,7 +50,7 @@ class UserPhoto:
             info_dict = {}
             info_dict['img_list']=[]
             for item in photo_list:
-                info_dict['img_list'].append({"img_id":item[0],"img_url":Config.Config.ip+"/"+item[1]})
+                info_dict['img_list'].append({"img_id":item[0],"img_url":"http://"+Config.Config.ip+"/"+item[1]})
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e

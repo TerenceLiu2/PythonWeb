@@ -20,6 +20,7 @@ urls = (
     '/Img/(.*?)','SingleImg',
     '/UserBasicInfo','UserBasicInfo',
     '/UserActivity','UserActivity',
+    '/UserPhoto','UserPhoto',
     #发布
     '/Publish','Publish',
     #主页

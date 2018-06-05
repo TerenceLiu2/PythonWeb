@@ -1,15 +1,15 @@
 #!/usr/bin/python
 #coding=utf-8
 import Config.Config
-import Tools.LittleTools,Tools.SQLTools
-from LoginRegist.Regist import *
-from LoginRegist.Login import *
-from MainPage.TakeActivity import *
-from MainPage.MainActivity import *
-from Publish.Publish import *
-from User.UserHistory import *
-from User.UserInfo import *
+import Tools.SQLTools,Tools.LittleTools
+from Activity.Publish import *
+from Activity.TakeActivity import *
 from Tools.Image import *
+from LoginRegist.Login import *
+from User.UserInfo import *
+from User.UserHistory import *
+from Activity.FinishActivity import *
+from LoginRegist.Regist import *
 from MainPage.MainActivity import *
 
 urls = (
@@ -22,12 +22,14 @@ urls = (
     '/UserBasicInfo','UserBasicInfo',
     '/UserActivity','UserActivity',
     '/UserPhoto','UserPhoto',
-    #发布
+    #活动
     '/Publish','Publish',
+    '/TakeActivity','TakeActivity',
+    '/FinishActivity','FinishActivity',
     #主页
     '/MainWait','MainWait',
     '/MainFinish','MainFinish',
-    '/TakeActivity','TakeActivity',
+
     #测试
     '/(.*?)', 'RegistInput'
 

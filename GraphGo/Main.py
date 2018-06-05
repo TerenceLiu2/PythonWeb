@@ -7,6 +7,7 @@ from MainPage.TakeActivity import *
 from Tools.Image import *
 from Publish.Publish import *
 from User.UserInfo import *
+from User.UserHistory import *
 from MainPage.MainActivity import *
 
 urls = (

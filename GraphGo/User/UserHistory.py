@@ -46,7 +46,7 @@ class UserPhoto:
         if user_id == False:
             return LittleTools.MakeJson(400, "")
         try:
-            photo_list=SQLTools.GetHistoryFromSql(3,page_num,item_num,user_id)
+            photo_list=SQLTools.GetHistoryFromSql(2,page_num,item_num,user_id)
             print photo_list
             info_dict = {}
             info_dict['img_list']=[]

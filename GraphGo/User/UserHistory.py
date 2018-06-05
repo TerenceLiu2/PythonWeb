@@ -23,7 +23,7 @@ class UserActivity:
             for item in wait_list:
                 info_dict['wait_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
                                                'profile_url': "http://%s/Img/%d/profile" % (
-                                                   Config.Config.ip, item[0]), 'activity_id': item[3]})
+                                                   Config.Config.ip, item[0]), 'activity_id': item[3],'status':item[4]})
             info_dict['finish_list']=[]
             for item in finish_list:
                 info_dict['finish_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],

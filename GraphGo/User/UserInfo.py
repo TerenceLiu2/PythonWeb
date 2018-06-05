@@ -19,11 +19,12 @@ class UserInfoUpload:
             email=info_dict['email']
             birthday=info_dict['birthday']
             introduction=info_dict['introduction']
-            print phone_number,email,birthday,introduction,profile
+            print phone_number,email,birthday,introduction
             SQLTools.UpdateUserInfo(user_id, phone_number, email, birthday, introduction)
             LittleTools.Mkdir("Img/"+str(user_id))
-            fwrite=open("Img/"+str(user_id)+"/profile",'w')
-            fwrite.write(profile)
+            LittleTools.SaveSmallImg(profile,"Img/"+str(user_id)+"/profile")
+            # fwrite=open("Img/"+str(user_id)+"/profile",'w')
+            # fwrite.write(profile)
             return LittleTools.MakeJson(200,"")
         except Exception,e:
             print e

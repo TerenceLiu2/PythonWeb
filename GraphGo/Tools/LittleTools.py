@@ -4,6 +4,18 @@ import os
 import time
 import base64
 import SQLTools
+import os, sys
+from PIL import Image
+
+
+def SaveSmallImg(infile,dir):
+    size = (1280, 1280)
+    try:
+        im = Image.open(infile)
+        im.thumbnail(size)
+        im.save(dir, "JPEG")
+    except IOError:
+        print("cannot create thumbnail for", infile)
 
 def generate_token(key, expire=36000):
     r'''

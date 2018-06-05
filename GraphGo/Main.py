@@ -1,13 +1,4 @@
 #coding=utf-8
-import Config.Config
-import Tools.SQLTools, Tools.LittleTools
-from LoginRegist.Login import *
-from LoginRegist.Regist import *
-from MainPage.TakeActivity import *
-from Tools.Image import *
-from Publish.Publish import *
-from User.UserInfo import *
-from User.UserHistory import *
 from MainPage.MainActivity import *
 
 urls = (

@@ -1,5 +1,14 @@
 #!/usr/bin/python
 #coding=utf-8
+import Config.Config
+import Tools.LittleTools,Tools.SQLTools
+from LoginRegist.Regist import *
+from LoginRegist.Login import *
+from MainPage.TakeActivity import *
+from MainPage.MainActivity import *
+from Publish.Publish import *
+from User.UserHistory import *
+from User.UserInfo import *
 from MainPage.MainActivity import *
 
 urls = (

@@ -40,8 +40,8 @@
       <file leaf-file-name="UserHistory.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+            <state relative-caret-position="270">
+              <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -436,13 +436,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00035" summary="all Project">
-      <created>1528029783608</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1528029783608</updated>
-    </task>
     <task id="LOCAL-00036" summary="all Project">
       <created>1528029869712</created>
       <option name="number" value="00036" />
@@ -779,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528163016428</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="all Project">
+      <created>1528163076222</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1528163076222</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1162,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+        <state relative-caret-position="270">
+          <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -47,11 +47,10 @@ class UserPhoto:
             return LittleTools.MakeJson(400, "")
         try:
             photo_list=SQLTools.GetHistoryFromSql(2,page_num,item_num,user_id)
-            print photo_list
             info_dict = {}
             info_dict['img_list']=[]
             for item in photo_list:
-                info_dict['img_list'].append({"img_id":item[0],"img_url":Config.ip+"/"+item[1]})
+                info_dict['img_list'].append({"img_id":item[0],"img_url":Config.Config.ip+"/"+item[1]})
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e

@@ -47,8 +47,8 @@ class UserBasicInfo:
             return LittleTools.MakeJson(500,"")
             pass
         if token!=None:
-            # print {"username":user_name,"profile":"http:%s/Img/%s/profile"%(Config.Config.ip, user_id)}
-            return LittleTools.MakeJson(200, {"username":user_name,"profile":"%s/Img/%s/profile"%(Config.Config.ip, user_id)})
+            print "http://"+Config.Config.ip+"/Img/"+str(user_id)+"/profile"
+            return LittleTools.MakeJson(200, {"username":user_name,"profile":"http://"+Config.Config.ip+"/Img/"+str(user_id)+"/profile"})
         else:
             return LittleTools.MakeJson(401, "")
 

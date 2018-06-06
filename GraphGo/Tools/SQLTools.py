@@ -84,3 +84,9 @@ def GetActivityFromSql(type,page_num,item_num):
         else:
             cur.execute("select activity.user_id,content,username,activity_id from activity,user where status=2 and user.user_id=activity.user_id limit %s,%s ;"%((page_num-1)*item_num,item_num))
         return cur.fetchall()
+
+def GetNoticeFromSql(user_id):
+    global cur,conn
+    cur.execute("select content,username from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id)
+    for item in cur.fetchall():
+        print item[0],item[1]

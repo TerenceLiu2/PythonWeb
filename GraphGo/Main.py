@@ -10,6 +10,7 @@ from User.UserInfo import *
 from User.UserHistory import *
 from Activity.FinishActivity import *
 from LoginRegist.Regist import *
+from Notice.Notice import *
 from MainPage.MainActivity import *
 
 urls = (
@@ -29,7 +30,8 @@ urls = (
     #主页
     '/MainWait','MainWait',
     '/MainFinish','MainFinish',
-
+    #消息
+    '/UserNotice','UserNotice',
     #测试
     '/(.*?)', 'RegistInput'
 

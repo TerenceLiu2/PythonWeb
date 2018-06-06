@@ -12,10 +12,9 @@ class UserNotice:
         if user_id == False:
             return LittleTools.MakeJson(400, "")
         try:
-            user_name = SQLTools.GetNoticeFromSql(user_id)
+            notice_list = SQLTools.GetNoticeFromSql(user_id)
         except Exception, e:
             print e
             return LittleTools.MakeJson(500, "")
             pass
-        return LittleTools.MakeJson(200, {"username": user_name,
-                                              'profile_url': "http://%s/Img/%s/profile" % (Config.Config.ip, user_id)})
+        return LittleTools.MakeJson(200, {"notice_list": notice_list})

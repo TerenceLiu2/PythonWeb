@@ -52,8 +52,8 @@
       <file leaf-file-name="UserInfo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/User/UserInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+            <state relative-caret-position="297">
+              <caret line="50" column="81" lean-forward="false" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -655,13 +655,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00045" summary="all Project">
-      <created>1528099223402</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1528099223402</updated>
-    </task>
     <task id="LOCAL-00046" summary="all Project">
       <created>1528099284062</created>
       <option name="number" value="00046" />
@@ -998,7 +991,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528288055440</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="all Project">
+      <created>1528288555371</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1528288555371</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1381,8 +1381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/User/UserInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        <state relative-caret-position="297">
+          <caret line="50" column="81" lean-forward="false" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
           <folding />
         </state>
       </provider>

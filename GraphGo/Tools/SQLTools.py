@@ -36,7 +36,7 @@ def GetListFromSql(sql):
 
 def UpdateUserInfo(user_id,phone_number,email,birthday,introduction):
     global cur, conn
-    cur.execute("update user set email='%s',birthday='%s',introduction='%s' where user_id=%s"%(email,birthday,introduction,user_id))
+    cur.execute("update user set email='%s',birthday='%s',introduction='%s',phone_number='%s' where user_id=%s"%(email,birthday,introduction,phone_number,user_id))
     conn.commit()
 
 def GetHistoryFromSql(type,page_num,item_num,user_id):

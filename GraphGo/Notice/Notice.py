@@ -13,7 +13,8 @@ class UserNotice:
         if user_id == False:
             return LittleTools.MakeJson(400, "")
         try:
-            notice_list = SQLTools.GetNoticeFromSql(user_id)
+            notice_list = SQLTools.GetNoticeFromSql(user_id,0)
+            notice_list.append(SQLTools.GetNoticeFromSql(user_id,1))
         except Exception, e:
             print e
             return LittleTools.MakeJson(500, "")

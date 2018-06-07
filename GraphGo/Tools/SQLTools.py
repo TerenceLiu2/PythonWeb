@@ -135,19 +135,22 @@ def GetActivityFromSql(type,page_num,item_num):
         conn.close()
         return list
 
-def GetNoticeFromSql(user_id):
+def GetNoticeFromSql(user_id,type):
     global cur,conn
     InitSql('localhost', 'root', '123', 'GraphGo')
-    cur.execute("select content,username,notice.type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id)
-    notice_list=[]
-    for item in cur.fetchall():
-        print item
-        if int(item[2])==0:
+    if type==0:
+        cur.execute("select content,username,notice.type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id and notice.type=0;"%user_id)
+        notice_list=[]
+        for item in cur.fetchall():
             content="'"+item[1]+"'take part in'"+item[0]+"'"
             notice_list.append({'content':content})
-        else:
-            content = item[0]+"is end"
-            notice_list.append({'content': content})
-    print notice_list
-    conn.close()
-    return notice_list
+        conn.close()
+        return notice_list
+    if type==0:
+        cur.execute("select content,username,notice.type from notice,activity,user where attender_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id and notice.type=1;"%user_id)
+        notice_list=[]
+        for item in cur.fetchall():
+            content=item[0]+" is end"
+            notice_list.append({'content':content})
+        conn.close()
+        return notice_list

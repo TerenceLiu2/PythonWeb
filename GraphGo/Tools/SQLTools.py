@@ -58,9 +58,9 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
     if type==0:
         if page_num==0:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s;"%user_id)
-            list=cur.fetchall()
+            a_list=list(cur.fetchall())
             conn.close()
-            return list
+            return a_list
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
             a_list = list(cur.fetchall())
@@ -83,15 +83,15 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
             return a_list
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
-            list = cur.fetchall()
+            a_list = cur.fetchall()
             conn.close()
-            return list
+            return a_list
     elif type==2:
         cur.execute("select img_id,img_dir from photo where user_id=%s"%user_id)
         print "select img_id,img_dir from photo where user_id=%s" % user_id
-        list = cur.fetchall()
+        a_list = cur.fetchall()
         conn.close()
-        return list
+        return a_list
 
 
 

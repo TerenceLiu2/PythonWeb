@@ -63,7 +63,7 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
             return list
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
-            list = cur.fetchall()
+            list = list(cur.fetchall())
             cur.execute(
                 "select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and attender_id=%s limit %d,%d ;" % (
                 user_id, (page_num - 1) * item_num, item_num))
@@ -73,7 +73,7 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
     elif type==1:
         if page_num==0:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id and user.user_id=%s;"%user_id)
-            list = cur.fetchall()
+            list = list(cur.fetchall())
             cur.execute(
                 "select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id and attender_id=%s limit %d,%d ;" % (
                     user_id, (page_num - 1) * item_num, item_num))

@@ -12,7 +12,7 @@ class FinishActivity:
         content=info['content']
         size=int(info['size'])
         user_id=LittleTools.certify_token(token)
-        print size
+        print size,activity_id
         if user_id==False:
             return LittleTools.MakeJson(400,"")
         try:

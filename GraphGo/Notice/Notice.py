@@ -9,6 +9,7 @@ class UserNotice:
     def POST(self):
         token = web.input()
         user_id = LittleTools.certify_token(token['token'].encode("utf-8"))
+        print user_id,"userid"
         if user_id == False:
             return LittleTools.MakeJson(400, "")
         try:

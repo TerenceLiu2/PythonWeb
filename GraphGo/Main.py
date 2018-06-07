@@ -42,5 +42,4 @@ app = web.application(urls, globals())
 
 
 if __name__ == "__main__":
-    SQLTools.InitSql('localhost', 'root', '123', 'GraphGo')
     app.run()

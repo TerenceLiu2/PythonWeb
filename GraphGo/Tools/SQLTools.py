@@ -7,58 +7,82 @@ def InitSql(hostname,user,password,db):
 
 def InsertSql(sql):
     global cur,conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     cur.execute(sql)
     conn.commit()
+    conn.close()
 
 def UpdateSql(sql):
     global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     cur.execute(sql)
     conn.commit()
+    conn.close()
 
 def GetOneFromSql(sql):
     global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     cur.execute(sql)
     one=cur.fetchone()
     if one:
+        conn.close()
         return one[0]
     else:
+        conn.close()
         return None
+
 
 def GetListFromSql(sql):
     global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     cur.execute(sql)
     one = cur.fetchone()
     if one:
+        conn.close()
         return one
     else:
+        conn.close()
         return None
 
 
 def UpdateUserInfo(user_id,phone_number,email,birthday,introduction):
     global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     cur.execute("update user set email='%s',birthday='%s',introduction='%s',phone_number='%s' where user_id=%s"%(email,birthday,introduction,phone_number,user_id))
     conn.commit()
+    conn.close()
 
 def GetHistoryFromSql(type,page_num,item_num,user_id):
     global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     if type==0:
         if page_num==0:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s;"%user_id)
-            return cur.fetchall()
+            list=cur.fetchall()
+            conn.close()
+            return list
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
-            return cur.fetchall()
+            list = cur.fetchall()
+            conn.close()
+            return list
     elif type==1:
         if page_num==0:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id and user.user_id=%s;"%user_id)
-            return cur.fetchall()
+            list = cur.fetchall()
+            conn.close()
+            return list
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
-            return cur.fetchall()
+            list = cur.fetchall()
+            conn.close()
+            return list
     elif type==2:
         cur.execute("select img_id,img_dir from photo where user_id=%s"%user_id)
         print "select img_id,img_dir from photo where user_id=%s" % user_id
-        return cur.fetchall()
+        list = cur.fetchall()
+        conn.close()
+        return list
 
 
 
@@ -72,18 +96,23 @@ def GetActivityFromSql(type,page_num,item_num):
     '''
 
     global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
     if type==0:
         if page_num==0:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id;")
         else:
             cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id limit %d,%d ;"%((page_num-1)*item_num,item_num))
-        return cur.fetchall()
+        list=cur.fetchall()
+        conn.close()
+        return list
     else:
         if page_num==0:
-            cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id;")
+            cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where status=2 and user.user_id=activity.user_id;")
         else:
             cur.execute("select activity.user_id,content,username,activity_id from activity,user where status=2 and user.user_id=activity.user_id limit %s,%s ;"%((page_num-1)*item_num,item_num))
-        return cur.fetchall()
+        list = cur.fetchall()
+        conn.close()
+        return list
 
 def GetNoticeFromSql(user_id):
     global cur,conn
@@ -92,4 +121,5 @@ def GetNoticeFromSql(user_id):
     for item in cur.fetchall():
         content="'"+item[1]+"'take part in'"+item[0]+"'"
         notice_list.append({'content':content})
+    conn.close()
     return notice_list

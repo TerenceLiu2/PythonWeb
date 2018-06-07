@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea28cc18-63e8-4f81-8642-dc3b2d5ccfe2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" afterPath="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Notice/Notice.py" afterPath="$PROJECT_DIR$/GraphGo/Notice/Notice.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +15,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="SQLTools.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SQLTools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="422">
@@ -25,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notice.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Notice.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/Notice/Notice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="540">
+              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/GraphGo/User/UserHistory.py" />
         <option value="$PROJECT_DIR$/GraphGo/Activity/TakeActivity.py" />
         <option value="$PROJECT_DIR$/GraphGo/Activity/FinishActivity.py" />
-        <option value="$PROJECT_DIR$/GraphGo/Notice/Notice.py" />
         <option value="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" />
+        <option value="$PROJECT_DIR$/GraphGo/Notice/Notice.py" />
       </list>
     </option>
   </component>
@@ -510,13 +510,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00086" summary="all Project">
-      <created>1528164015494</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1528164015495</updated>
-    </task>
     <task id="LOCAL-00087" summary="all Project">
       <created>1528164118683</created>
       <option name="number" value="00087" />
@@ -853,7 +846,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528380785988</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="all Project">
+      <created>1528380820159</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1528380820159</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1243,21 +1243,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphGo/Notice/Notice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="149" column="96" lean-forward="false" selection-start-line="149" selection-start-column="96" selection-end-line="149" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphGo/Notice/Notice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

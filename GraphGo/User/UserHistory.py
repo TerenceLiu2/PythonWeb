@@ -19,6 +19,8 @@ class UserActivity:
                 return LittleTools.MakeJson(400,"")
             wait_list = SQLTools.GetHistoryFromSql(0, page_num, item_num,user_id)
             finish_list = SQLTools.GetHistoryFromSql(1, page_num, item_num,user_id)
+            wait_list_more = SQLTools.GetHistoryFromSql(3, page_num, item_num, user_id)
+            finish_list_more = SQLTools.GetHistoryFromSql(4, page_num, item_num, user_id)
             info_dict = {}
             info_dict['wait_list'] = []
             for item in wait_list:
@@ -27,6 +29,16 @@ class UserActivity:
                                                    Config.Config.ip, item[0]), 'activity_id': item[3],'status':item[4]})
             info_dict['finish_list']=[]
             for item in finish_list:
+                info_dict['finish_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
+                                               'profile_url': "http://%s/Img/%d/profile" % (
+                                                   Config.Config.ip, item[0]),'img_url': "http://%s/Img/%d/%d/0" % (
+                                                Config.Config.ip, item[0], int(item[3])), 'activity_id': item[3]})
+            for item in wait_list_more:
+                info_dict['wait_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
+                                               'profile_url': "http://%s/Img/%d/profile" % (
+                                                   Config.Config.ip, item[0]), 'activity_id': item[3],'status':item[4]})
+            info_dict['finish_list']=[]
+            for item in finish_list_more:
                 info_dict['finish_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
                                                'profile_url': "http://%s/Img/%d/profile" % (
                                                    Config.Config.ip, item[0]),'img_url': "http://%s/Img/%d/%d/0" % (

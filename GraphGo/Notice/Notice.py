@@ -16,5 +16,4 @@ class UserNotice:
         except Exception, e:
             print e
             return LittleTools.MakeJson(500, "")
-            pass
         return LittleTools.MakeJson(200, {"notice_list": notice_list})

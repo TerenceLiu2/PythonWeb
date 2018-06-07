@@ -146,5 +146,6 @@ def GetNoticeFromSql(user_id):
         else:
             content = item[0]+"is end"
             notice_list.append({'content': content})
+    print notice_list
     conn.close()
     return notice_list

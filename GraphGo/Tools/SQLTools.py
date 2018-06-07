@@ -98,6 +98,13 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
         conn.close()
         return a_list
 
+def GenerateNotice(type,creater,attender,activity):
+    global cur, conn
+    InitSql('localhost', 'root', '123', 'GraphGo')
+    cur.execute("insert into notice (activity_id,creater_id,attender_id,type) value(%s,%s,%s,%s)"%(activity,creater,attender,type))
+    conn.commit()
+    conn.close()
+
 
 
 
@@ -130,10 +137,14 @@ def GetActivityFromSql(type,page_num,item_num):
 
 def GetNoticeFromSql(user_id):
     global cur,conn
-    cur.execute("select content,username from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id)
+    cur.execute("select content,username,type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id)
     notice_list=[]
     for item in cur.fetchall():
-        content="'"+item[1]+"'take part in'"+item[0]+"'"
-        notice_list.append({'content':content})
+        if int(item[2])==0:
+            content="'"+item[1]+"'take part in'"+item[0]+"'"
+            notice_list.append({'content':content})
+        else:
+            content = item[0]+"is end"
+            notice_list.append({'content': content})
     conn.close()
     return notice_list

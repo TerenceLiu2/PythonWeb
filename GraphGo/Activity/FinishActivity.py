@@ -23,7 +23,9 @@ class FinishActivity:
                     wf.write(info["p"+str(i)])
                     SQLTools.InsertSql("insert into photo (user_id,img_dir,activity_id) value(%s,'%s',%s)"%(user_id,img_dir,activity_id))
             SQLTools.UpdateSql("update activity set status=2 where activity_id=%s" % activity_id)
+            creater = SQLTools.GetOneFromSql("select user_id from activity where activity_id=%s" % activity_id)
             SQLTools.UpdateSql("update activity set content='%s' where activity_id=%s" % (content, activity_id))
+            SQLTools.GenerateNotice("1", creater, user_id, activity_id)
             return LittleTools.MakeJson(200,"")
         except Exception,e:
             print e

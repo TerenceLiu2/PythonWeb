@@ -146,7 +146,7 @@ def GetNoticeFromSql(user_id,type):
             notice_list.append({'content':content})
         conn.close()
         return notice_list
-    if type==0:
+    elif type==1:
         cur.execute("select content,username,notice.type from notice,activity,user where attender_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id and notice.type=1;"%user_id)
         notice_list=[]
         for item in cur.fetchall():

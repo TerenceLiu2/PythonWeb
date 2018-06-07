@@ -147,7 +147,7 @@ def GetNoticeFromSql(user_id,type):
         conn.close()
         return notice_list
     elif type==1:
-        cur.execute("select content,username,notice.type from notice,activity,user where attender_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id and notice.type=1;"%user_id)
+        cur.execute("select content,username,notice.type from notice,activity,user where notice.attender_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id and notice.type=1;"%user_id)
         notice_list=[]
         for item in cur.fetchall():
             content=item[0]+" is end"

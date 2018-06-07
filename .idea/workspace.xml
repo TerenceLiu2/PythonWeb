@@ -18,8 +18,8 @@
       <file leaf-file-name="SQLTools.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="148" column="16" lean-forward="false" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
+            <state relative-caret-position="422">
+              <caret line="149" column="96" lean-forward="false" selection-start-line="149" selection-start-column="96" selection-end-line="149" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -510,13 +510,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00085" summary="all Project">
-      <created>1528163303397</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1528163303397</updated>
-    </task>
     <task id="LOCAL-00086" summary="all Project">
       <created>1528164015494</created>
       <option name="number" value="00086" />
@@ -853,7 +846,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528380765492</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="all Project">
+      <created>1528380785988</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1528380785988</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1255,8 +1255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="148" column="16" lean-forward="false" selection-start-line="148" selection-start-column="16" selection-end-line="148" selection-end-column="16" />
+        <state relative-caret-position="422">
+          <caret line="149" column="96" lean-forward="false" selection-start-line="149" selection-start-column="96" selection-end-line="149" selection-end-column="96" />
           <folding />
         </state>
       </provider>

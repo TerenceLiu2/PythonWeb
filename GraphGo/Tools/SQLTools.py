@@ -137,8 +137,9 @@ def GetActivityFromSql(type,page_num,item_num):
 
 def GetNoticeFromSql(user_id):
     global cur,conn
+    print "select content,username,type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;" % user_id
     cur.execute("select content,username,type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id)
-    print "select content,username,type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id
+
     notice_list=[]
     for item in cur.fetchall():
         if int(item[2])==0:

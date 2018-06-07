@@ -30,8 +30,8 @@
       <file leaf-file-name="UserHistory.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+            <state relative-caret-position="567">
+              <caret line="43" column="114" lean-forward="false" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -521,13 +521,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00069" summary="all Project">
-      <created>1528160419874</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1528160419874</updated>
-    </task>
     <task id="LOCAL-00070" summary="all Project">
       <created>1528160468414</created>
       <option name="number" value="00070" />
@@ -864,7 +857,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528377749961</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="all Project">
+      <created>1528378050082</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1528378050082</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1255,8 +1255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        <state relative-caret-position="567">
+          <caret line="43" column="114" lean-forward="false" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

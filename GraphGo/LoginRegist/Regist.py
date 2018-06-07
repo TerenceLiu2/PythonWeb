@@ -1,5 +1,6 @@
 import web
 from sys import path
+import shutil
 path.append(r'Tools')
 path.append(r'Config')
 import LittleTools,SQLTools
@@ -20,8 +21,11 @@ class Regist:
         re_password=info_dict['re_password']
         if password==re_password:
             sql = "insert into user (username,password) value ('%s','%s')" % (username, password)
-            print sql
             SQLTools.InsertSql(sql)
+            sql = "select user_id from user where username='%s';"%username
+            user_id=SQLTools.GetOneFromSql(sql)
+            LittleTools.Mkdir("Img/%s/"%user_id)
+            shutil.copyfile("Img/default/profile","Img/%s/profile"%user_id)
             return LittleTools.MakeJson(200,"")
         else:
             return LittleTools.MakeJson(400,"")

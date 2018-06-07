@@ -138,9 +138,9 @@ def GetActivityFromSql(type,page_num,item_num):
 def GetNoticeFromSql(user_id):
     global cur,conn
     cur.execute("select content,username,notice.type from notice,activity,user where creater_id=%s and activity.activity_id=notice.activity_id and user.user_id=notice.attender_id;"%user_id)
-
     notice_list=[]
     for item in cur.fetchall():
+        print item
         if int(item[2])==0:
             content="'"+item[1]+"'take part in'"+item[0]+"'"
             notice_list.append({'content':content})

@@ -14,7 +14,8 @@ class UserNotice:
             return LittleTools.MakeJson(400, "")
         try:
             notice_list = SQLTools.GetNoticeFromSql(user_id,0)
-            notice_list.append(i for i in SQLTools.GetNoticeFromSql(user_id,1))
+            for i in SQLTools.GetNoticeFromSql(user_id, 1):
+                notice_list.append(i)
         except Exception, e:
             print e
             return LittleTools.MakeJson(500, "")

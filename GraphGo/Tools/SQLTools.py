@@ -36,7 +36,7 @@ def GetListFromSql(sql):
     global cur, conn
     InitSql('localhost', 'root', '123', 'GraphGo')
     cur.execute(sql)
-    one = cur.fetchone()
+    one = cur.fetchall()
     if one:
         conn.close()
         return one

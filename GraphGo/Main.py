@@ -9,6 +9,7 @@ from LoginRegist.Login import *
 from User.UserInfo import *
 from User.UserHistory import *
 from Activity.FinishActivity import *
+from Activity.ActivityInfo import *
 from LoginRegist.Regist import *
 from Notice.Notice import *
 from MainPage.MainActivity import *
@@ -27,6 +28,7 @@ urls = (
     '/Publish','Publish',
     '/TakeActivity','TakeActivity',
     '/FinishActivity','FinishActivity',
+    '/ActivityInfo','ActivityInfo',
     #主页
     '/MainWait','MainWait',
     '/MainFinish','MainFinish',

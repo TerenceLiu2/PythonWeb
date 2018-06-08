@@ -16,6 +16,7 @@ class ActivityInfo:
             info_dict={}
             info_dict['content']=content
             info_dict['img_list']=[]
+            print item_list
             for item in item_list:
                 info_dict['img_list'].append({'img_url':"http://%s/%s" % (Config.Config.ip, item)})
             print info_dict

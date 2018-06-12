@@ -42,6 +42,7 @@ class UserActivity:
                                                'profile_url': "http://%s/Img/%d/profile#%s" % (
                                                    Config.Config.ip, item[0],LittleTools.generate_random()),'img_url': "http://%s/Img/%d/%d/0" % (
                                                 Config.Config.ip, item[0], int(item[3])), 'activity_id': item[3]})
+            print info_dict
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e

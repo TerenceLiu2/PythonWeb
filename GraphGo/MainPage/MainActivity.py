@@ -34,8 +34,8 @@ class MainFinish:
             info_dict={}
             info_dict['item_list']=[]
             for item in item_list:
-                info_dict['item_list'].append({'user_id':item[0],'username':item[2],'content':item[1],'profile_url':"http://%s/Img/%d/profile"% (
-                Config.Config.ip, item[0]), 'img_url': "http://%s/Img/%d/%d/0#%s" % (
+                info_dict['item_list'].append({'user_id':item[0],'username':item[2],'content':item[1],'profile_url':"http://%s/Img/%d/profile#%s"% (
+                Config.Config.ip, item[0],LittleTools.generate_random()), 'img_url': "http://%s/Img/%d/%d/0#%s" % (
                 Config.Config.ip, item[0], int(item[3]),LittleTools.generate_random()),'activity_id':item[3]})
 
             return LittleTools.MakeJson(200,info_dict)

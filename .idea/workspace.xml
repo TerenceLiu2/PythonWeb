@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea28cc18-63e8-4f81-8642-dc3b2d5ccfe2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Activity/ActivityInfo.py" afterPath="$PROJECT_DIR$/GraphGo/Activity/ActivityInfo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py" afterPath="$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Test.py" afterPath="$PROJECT_DIR$/GraphGo/Test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Tools/LittleTools.py" afterPath="$PROJECT_DIR$/GraphGo/Tools/LittleTools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/User/UserHistory.py" afterPath="$PROJECT_DIR$/GraphGo/User/UserHistory.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/User/UserInfo.py" afterPath="$PROJECT_DIR$/GraphGo/User/UserInfo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" afterPath="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +19,8 @@
       <file leaf-file-name="SQLTools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="258">
+              <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -62,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="37" column="71" lean-forward="false" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -84,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Image.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Image.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphGo/Tools/Image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="81">
+              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -97,8 +93,8 @@
       <file leaf-file-name="UserHistory.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="395">
+              <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -117,7 +113,7 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphGo/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="54">
               <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
@@ -167,13 +163,13 @@
         <option value="$PROJECT_DIR$/GraphGo/Notice/Notice.py" />
         <option value="$PROJECT_DIR$/GraphGo/Main.py" />
         <option value="$PROJECT_DIR$/GraphGo/Html/Regist.html" />
-        <option value="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" />
         <option value="$PROJECT_DIR$/GraphGo/Test.py" />
         <option value="$PROJECT_DIR$/GraphGo/Activity/ActivityInfo.py" />
         <option value="$PROJECT_DIR$/GraphGo/Tools/LittleTools.py" />
-        <option value="$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py" />
         <option value="$PROJECT_DIR$/GraphGo/User/UserHistory.py" />
         <option value="$PROJECT_DIR$/GraphGo/User/UserInfo.py" />
+        <option value="$PROJECT_DIR$/GraphGo/Tools/SQLTools.py" />
+        <option value="$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py" />
       </list>
     </option>
   </component>
@@ -568,13 +564,6 @@
       <option name="presentableId" value="Default" />
       <updated>1525879452998</updated>
     </task>
-    <task id="LOCAL-00098" summary="all Project">
-      <created>1528289096530</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1528289096530</updated>
-    </task>
     <task id="LOCAL-00099" summary="all Project">
       <created>1528289206001</created>
       <option name="number" value="00099" />
@@ -911,7 +900,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528440373311</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="all Project">
+      <created>1528764469793</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1528764469794</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1186,14 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphGo/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/Html/Regist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
@@ -1225,16 +1213,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,14 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/Notice/Notice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -1293,14 +1265,6 @@
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,8 +1278,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphGo/Tools/Image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="81">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphGo/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphGo/User/UserHistory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="59" column="38" lean-forward="false" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphGo/Tools/SQLTools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="77" column="24" lean-forward="true" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphGo/MainPage/MainActivity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="37" column="71" lean-forward="false" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
           <folding />
         </state>
       </provider>

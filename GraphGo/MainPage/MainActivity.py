@@ -17,7 +17,7 @@ class MainWait:
             info_dict['item_list']=[]
             for item in item_list:
                 info_dict['item_list'].append({'user_id':item[0],'username':item[2],'content':item[1],'img_url':"http://%s/Img/%d/profile#%s" % (
-                    Config.Config.ip, item[0],LittleTools.generate_random()),'activity_id':item[3],'status':item[4]})
+                    Config.Config.ip, item[0],LittleTools.generate_random()),'activity_id':item[3],'status':item[4],'type':item[5]})
             print info_dict
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:

@@ -23,8 +23,9 @@ class UserInfoUpload:
             SQLTools.UpdateUserInfo(user_id, phone_number, email, birthday, introduction)
             # LittleTools.Mkdir("Img/"+str(user_id))
             # LittleTools.SaveSmallImg(profile,"Img/"+str(user_id)+"/profile")
-            fwrite=open("Img/"+str(user_id)+"/profile",'w')
-            fwrite.write(profile)
+            if profile !=None:
+                fwrite=open("Img/"+str(user_id)+"/profile",'w')
+                fwrite.write(profile)
             return LittleTools.MakeJson(200,"")
         except Exception,e:
             print e

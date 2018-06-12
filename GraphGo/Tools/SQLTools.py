@@ -57,12 +57,12 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
     InitSql('localhost', 'root', '123', 'GraphGo')
     if type==0:
         if page_num==0:
-            cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s;"%user_id)
+            cur.execute("select activity.user_id,content,username,activity_id,status,type from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s;"%user_id)
             a_list=cur.fetchall()
             conn.close()
             return a_list
         else:
-            cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
+            cur.execute("select activity.user_id,content,username,activity_id,status,type from activity,user where (status=0 or status=1) and user.user_id=activity.user_id and user.user_id=%s limit %d,%d ;"%(user_id,(page_num-1)*item_num,item_num))
             a_list = cur.fetchall()
             conn.close()
             return a_list
@@ -92,7 +92,7 @@ def GetHistoryFromSql(type,page_num,item_num,user_id):
         return a_list
     elif type == 3:
         cur.execute(
-            "select activity.user_id,content,username,activity_id,status from activity,user where (status=1 or status=0) and user.user_id=activity.user_id and attender_id=%s ;" % (
+            "select activity.user_id,content,username,activity_id,status,type from activity,user where (status=1 or status=0) and user.user_id=activity.user_id and attender_id=%s ;" % (
                 user_id))
         a_list = cur.fetchall()
         conn.close()
@@ -120,9 +120,9 @@ def GetActivityFromSql(type,page_num,item_num):
     InitSql('localhost', 'root', '123', 'GraphGo')
     if type==0:
         if page_num==0:
-            cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id;")
+            cur.execute("select activity.user_id,content,username,activity_id,status,type from activity,user where (status=0 or status=1) and user.user_id=activity.user_id;")
         else:
-            cur.execute("select activity.user_id,content,username,activity_id,status from activity,user where (status=0 or status=1) and user.user_id=activity.user_id limit %d,%d ;"%((page_num-1)*item_num,item_num))
+            cur.execute("select activity.user_id,content,username,activity_id,status,type from activity,user where (status=0 or status=1) and user.user_id=activity.user_id limit %d,%d ;"%((page_num-1)*item_num,item_num))
         list=cur.fetchall()
         conn.close()
         return list

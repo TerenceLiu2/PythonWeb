@@ -48,7 +48,7 @@ class UserBasicInfo:
             pass
         if token!=None:
             print "http://"+Config.Config.ip+"/Img/"+str(user_id)+"/profile"
-            return LittleTools.MakeJson(200, {"username":user_name,'profile_url':"http://%s/Img/%s/profile"% (Config.Config.ip, user_id)})
+            return LittleTools.MakeJson(200, {"username":user_name,'profile_url':"http://%s/Img/%s/profile#%s"% (Config.Config.ip, user_id,LittleTools.generate_random())})
         else:
             return LittleTools.MakeJson(401, "")
 

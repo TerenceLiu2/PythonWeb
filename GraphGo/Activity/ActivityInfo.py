@@ -18,7 +18,7 @@ class ActivityInfo:
             info_dict['img_list']=[]
             print item_list
             for item in item_list:
-                info_dict['img_list'].append({'img_url':"http://%s/%s" % (Config.Config.ip, item[0])})
+                info_dict['img_list'].append({'img_url':"http://%s/%s#%s" % (Config.Config.ip, item[0],LittleTools.generate_random())})
             print info_dict
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:

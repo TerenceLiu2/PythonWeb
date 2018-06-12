@@ -6,6 +6,8 @@ import base64
 import SQLTools
 import os, sys
 from PIL import Image
+import datetime
+import random
 
 
 def SaveSmallImg(infile,dir):
@@ -31,6 +33,13 @@ def generate_token(key, expire=36000):
     b64_tk=base64.urlsafe_b64encode(tk.encode("utf-8"))
     return b64_tk
 
+def generate_random():
+    nowTime = datetime.datetime.now().strftime("%Y%m%d%H%M%S");  # 生成当前时间
+    randomNum = random.randint(0, 100);  # 生成的随机整数n，其中0<=n<=100
+    if randomNum <= 10:
+        randomNum = str(0) + str(randomNum);
+    uniqueNum = str(nowTime) + str(randomNum);
+    return str(uniqueNum);
 
 def certify_token(token):
     r'''

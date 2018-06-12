@@ -31,8 +31,8 @@ class UserActivity:
             for item in finish_list:
                 info_dict['finish_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
                                                'profile_url': "http://%s/Img/%d/profile#%s" % (
-                                                   Config.Config.ip, item[0],LittleTools.generate_random()),'img_url': "http://%s/Img/%d/%d/0#%s" % (
-                                                Config.Config.ip, item[0], int(item[3]),LittleTools.generate_random()), 'activity_id': item[3]})
+                                                   Config.Config.ip, item[0],LittleTools.generate_random()),'img_url': "http://%s/Img/%d/%d/0" % (
+                                                Config.Config.ip, item[0], int(item[3])), 'activity_id': item[3]})
             for item in wait_list_more:
                 info_dict['wait_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
                                                'profile_url': "http://%s/Img/%d/profile#%s" % (
@@ -40,8 +40,8 @@ class UserActivity:
             for item in finish_list_more:
                 info_dict['finish_list'].append({'user_id': item[0], 'username': item[2], 'content': item[1],
                                                'profile_url': "http://%s/Img/%d/profile#%s" % (
-                                                   Config.Config.ip, item[0],LittleTools.generate_random()),'img_url': "http://%s/Img/%d/%d/0#%s" % (
-                                                Config.Config.ip, item[0], int(item[3]),LittleTools.generate_random()), 'activity_id': item[3]})
+                                                   Config.Config.ip, item[0],LittleTools.generate_random()),'img_url': "http://%s/Img/%d/%d/0" % (
+                                                Config.Config.ip, item[0], int(item[3])), 'activity_id': item[3]})
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e
@@ -61,7 +61,7 @@ class UserPhoto:
             info_dict = {}
             info_dict['img_list']=[]
             for item in photo_list:
-                info_dict['img_list'].append({"img_id":item[0],"img_url":"http://"+Config.Config.ip+"/"+item[1]+"#%s"%LittleTools.generate_random()})
+                info_dict['img_list'].append({"img_id":item[0],"img_url":"http://"+Config.Config.ip+"/"+item[1]})
             return LittleTools.MakeJson(200,info_dict)
         except Exception,e:
             print e
